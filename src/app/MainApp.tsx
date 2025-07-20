@@ -22,33 +22,13 @@ export const MainApp = () => {
             <Route index element={<ContactListPage />} />
             <Route path="contact">
               <Route index element={<ContactListPage />} />
-              <Route
-                path=":contactId"
-                element={
-                  <ContactPage/>
-                }
-              />
+              <Route path=":contactId" element={<ContactPage />} />
             </Route>
             <Route path="groups">
-              <Route
-                index
-                element={
-                  <GroupListPage/>
-                }
-              />
-              <Route
-                path=":groupId"
-                element={
-                  <GroupPage/>
-                }
-              />
+              <Route index element={<GroupListPage />} />
+              <Route path=":groupId" element={<GroupPage />} />
             </Route>
-            <Route
-              path="favorit"
-              element={
-                <FavoritListPage/>
-              }
-            />
+            <Route path="favorit" element={<FavoritListPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
